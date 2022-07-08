@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body class="bg">
+    <h1 class="heading">Rock Paper Scissor</h1>
+    <h3 class="heading">Round: <span id="round"></span></h3>
+
+    <div class="container">
+        <div class="box" id="user">
+            <h3 class="box-heading">YOU</h3>
+        </div>
+        <div id="score"><span id="user-count">0</span>:<span id="comp-count">0</span></div>
+        <div class="box" id="comp">
+            <h3 class="box-heading">COMPUTER</h3>
+        </div>
+    </div>
+
+
+    <h3><span id="remark">Remark</span></h3>
+
+    <div class="options">
+        <div class="boxes" id="rock" onclick="rockFunc();"></div>
+        <div class="boxes" id="paper" onclick="paperFunc();"></div>
+        <div class="boxes" id="scissor" onclick="scissorFunc();"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
